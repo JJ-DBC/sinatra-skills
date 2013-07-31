@@ -1,0 +1,12 @@
+<h1>Welcome back <%= current_user.name %>!</h1>
+
+<section>
+  <header>
+    <h1>Your skills</h1>
+  </header>
+  <ul>
+    <% current_user.skills.each do |skill| %>
+      <li><%= skill.name %></li>
+    <% end %>
+  </ul>
+</section>
